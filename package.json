@@ -1,0 +1,37 @@
+{
+  "name": "jobtracker-cli",
+  "version": "0.1.0",
+  "description": "CLI for tracking daily job applications, streaks, and stats.",
+  "type": "module",
+  "bin": {
+    "jobhunt": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["cli", "job-tracker", "productivity", "typescript"],
+  "author": "Wasim (wasims.vercel.app)",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.4",
+    "commander": "^12.1.0",
+    "inquirer": "^9.3.0",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.14.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": ["dist", "README.md"]
+}
